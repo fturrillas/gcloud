@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcloud compute url-maps create web-map-http \
+    --default-service web-backend-service

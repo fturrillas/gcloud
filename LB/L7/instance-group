@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcloud compute instance-groups managed create lb-backend-group \
+   --template=lb-backend-template --size=2 --zone=Zone

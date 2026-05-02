@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcloud compute forwarding-rules create http-content-rule \
+   --address=lb-ipv4-1\
+   --global \
+   --target-http-proxy=http-lb-proxy \
+   --ports=80

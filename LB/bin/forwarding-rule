@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+gcloud compute forwarding-rules create www-rule \
+    --region  Region \
+    --ports 80 \
+    --address network-lb-ip-1 \
+    --target-pool www-pool

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcloud compute target-pools create www-pool \
+  --region Region --http-health-check basic-check

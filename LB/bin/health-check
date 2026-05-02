@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gcloud compute http-health-checks create basic-check

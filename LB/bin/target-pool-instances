@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcloud compute target-pools add-instances www-pool \
+    --instances www1,www2,www3

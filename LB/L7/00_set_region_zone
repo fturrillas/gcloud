@@ -5,3 +5,4 @@ zona=$2
 gcloud config set compute/region $region
 gcloud config set compute/zone $zona
 
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcloud compute backend-services add-backend prime-service \
+	--instance-group backend --instance-group-zone=ZONE \
+	--region=REGION

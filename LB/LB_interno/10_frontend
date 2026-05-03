@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcloud compute instances create frontend --zone=ZONE \
+	--metadata-from-file startup-script=frontend.sh \
+	--tags frontend --machine-type=e2-standard-2

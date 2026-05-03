@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcloud compute firewall-rules create http --network default --allow=tcp:80 \
+	--source-ranges IP --target-tags backend

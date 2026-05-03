@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcloud compute forwarding-rules create prime-lb \
+	--load-balancing-scheme internal \
+	--ports 80 --network default \
+	--region=REGION --address IP \
+	--backend-service prime-service

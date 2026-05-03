@@ -1,0 +1,6 @@
+#!/bin/bash
+
+gcloud compute instance-groups managed create backend \
+	--size 3 \
+	--template primecalc \
+	--zone ZONE
